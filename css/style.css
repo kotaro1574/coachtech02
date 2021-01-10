@@ -1,0 +1,538 @@
+@charset "utf-8";
+
+/* リセットcss */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/* その他のスタイルは以下に記述していきます */
+
+
+.header {
+  height: 70px;
+  background: #000;
+}
+
+.header-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo {
+  color: #f2f2f2;
+  font-weight: bold;
+  font-size: 20px;
+  margin-left: 35px;
+  line-height: 70px;
+}
+
+.header-nav ul {
+  display: flex;
+}
+
+.header-nav li {
+  margin-right: 35px;
+  font-size: 16px;
+}
+
+.header-nav a {
+  color: #f2f2f2;
+  text-decoration: none;
+}
+
+
+.eyecatch {
+  height: 600px;
+  background: url(../image/eyecatch.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.eyecatch .title {
+  position: absolute;
+  top: 60%;
+  left: 10%;
+  font-size: 30px;
+  font-style: italic;
+  font-weight: bold;
+  color: #ccc;
+}
+
+.eyecatch .news-parent {
+  height: 50px;
+  width: 780px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.eyecatch .news-parent .news {
+  width: 100%;
+  font-size: 12px;
+  background-color: #fff;
+}
+
+.eyecatch .news-parent .news .news-date {
+  margin: 5px;
+}
+
+.eyecatch .news-parent .news .news-title {
+  margin: 8px;
+}
+
+.eyecatch .news-parent .news-button {
+  width: 200px;
+  display: flex;
+  background-color: #000000;
+  text-align: center;
+  cursor: pointer;
+}
+
+.eyecatch .news-parent .news-button:hover {
+  background-color: #666565;
+}
+
+.eyecatch .news-parent .news-button a {
+  display: block;
+  margin: auto;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+  padding: 5px 20px; 
+}
+
+
+.mission {
+  height: 450px;
+  background-color: #000000;
+  position: relative;
+}
+
+.mission .mission-wrap {
+  color: #cccccc;
+  height: 200px;
+  width: 720px;
+  position: absolute;
+  top: 100px;
+  left: 250px;
+  z-index: 2;
+}
+
+.mission .mission-wrap .mission-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 20px 20px 30px 20px;
+}
+
+.mission .mission-wrap .mission-content {
+  font-size: 12px;
+  font-weight: bold;
+  margin: 0px 20px 30px 20px;
+  line-height: 1.7;
+}
+
+.mission .mission-wrap .mission-button {
+  text-decoration: none;
+  padding: 10px 20px;
+  margin: 20px;
+  background-color: #ffffff;
+  color: #000;
+}
+
+.mission .mission-wrap .mission-button:hover {
+  background-color: #cccccc;
+}
+
+.mission .mission-img {
+  position: absolute;
+  right: 150px;
+  bottom: -40px;
+  z-index: 1;
+}
+
+.mission .mission-img .mission-image {
+  height: 400px;
+  width: 550px;
+}
+
+.gap {
+  height: 170px;
+}
+
+.service {
+  height: 1600px;
+  background-color: #cccccc;
+  position: relative;
+}
+
+.service .service-title {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 30px;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.service .service-parent-1 {
+  height: 350px;
+  width: 650px;
+  background-color: #f2f2f2;
+  position: absolute;
+  top: 150px;
+  left: 200px;
+  z-index: 2;
+}
+
+.service .service-parent-1 .service-child-title {
+  font-size: 17px;
+  font-weight: bold;
+  padding-top: 80px;
+  margin: 0 0 20px 70px;
+}
+
+.service .service-parent-1 .service-child-subtitle {
+  font-size: 13px;
+  margin: 20px 70px;
+}
+
+.service .service-parent-1 .service-child-content {
+  font-size: 13px;
+  margin: 20px 70px;
+  line-height: 2;
+}
+
+.service .service-parent-1 .service-child-button {
+  width: 100px;
+  padding: 15px 30px;
+  margin: 20px 60px 80px auto;
+  border: 1px solid #000000;
+  text-align: center;
+}
+
+.service .service-parent-1 .service-child-button a {
+  color: #000000;
+  text-decoration: none
+}
+
+.service .service-img-1 {
+  position: absolute;
+  right: 0;
+}
+
+.service .service-img-1 .service-image {
+  height: 500px;
+  width: 730px;
+}
+
+.service .service-parent-2 {
+  height: 350px;
+  width: 650px;
+  background-color: #f2f2f2;
+  position: absolute;
+  bottom: 280px;
+  right: 250px;
+  z-index: 1;
+}
+
+.service .service-parent-2 .service-child-title {
+  font-size: 17px;
+  font-weight: bold;
+  padding-top: 80px;
+  margin: 0 0 20px 70px;
+}
+
+.service .service-parent-2 .service-child-subtitle {
+  font-size: 13px;
+  margin: 20px 70px;
+}
+
+.service .service-parent-2 .service-child-content {
+  font-size: 13px;
+  margin: 20px 70px;
+  line-height: 2;
+}
+
+.service .service-parent-2 .service-child-button {
+  width: 100px;
+  padding: 15px 30px;
+  margin: 20px 60px 80px auto;
+  border: 1px solid #000000;
+  text-align: center;
+}
+
+.service .service-parent-2 .service-child-button a {
+  color: #000000;
+  text-decoration: none
+}
+
+.service .service-img-2 {
+  position: absolute;
+  left: 0;
+  bottom: 250px;
+}
+
+.service .service-img-2 .service-image {
+  height: 500px;
+  width: 730px;
+}
+
+.faq {
+  height: 700px;
+}
+
+.faq .faq-content {
+  margin: 160px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.faq .faq-content .company {
+  width: 650px;
+  height: 250px;
+  position: relative;
+}
+
+.faq .faq-content .company .company-parent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.faq .faq-content .company .company-parent .company-title {
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.faq .faq-content .company .company-parent .company-subtitle {
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.faq .faq-content .company .company-image {
+  height: 250px;
+  width: 650px;
+}
+
+
+.faq .faq-content .recruit {
+  width: 650px;
+  height: 250px;
+  position: relative;
+}
+
+.faq .faq-content .recruit .recruit-parent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.faq .faq-content .recruit .recruit-parent .recruit-title {
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.faq .faq-content .recruit .recruit-parent .recruit-subtitle {
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.faq .faq-content .recruit .recruit-image {
+  height: 250px;
+  width: 650px;
+}
+
+.faq .faq-content .recruit .recruit-image {
+  height: 250px;
+  width: 650px;
+}
+
+.faq .faq-parent {
+  height: 130px;
+  background-color: #000000;
+  width: 80%;
+  margin: 160px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.faq .faq-parent .faq-title {
+  color: #ffffff;
+  text-align: center;
+  margin: 40px;
+  font-size: 33px;
+  font-weight: bold;
+}
+
+.faq .faq-parent .faq-subtitle {
+  color: #ffffff;
+  text-align: center;
+  font-size: 20px;
+}
+
+.faq .faq-parent .faq-empty {
+  margin: 100px;
+}
+
+
+.contact {
+  height: 550px;
+  background: url(../image/contact-bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.contact .contact-parent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: #ffffff;
+  text-align: center;
+  line-height: 1.5;
+  width: 80%;
+}
+
+.contact .contact-parent .contact-title {
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.contact .contact-parent .contact-subtitle {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.contact .contact-parent .contact-feel-free {
+  font-size: 35px;
+  line-height: 2.8;
+}
+
+.contact .contact-parent .contact-content {
+  font-size: 14px;
+  margin-bottom: 40px;
+}
+
+.contact .contact-parent .contact-button {
+  text-decoration: none;
+  padding: 15px 30px;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+}
+
+.footer {
+  background-color: #000000;
+  color: #ffffff;
+  text-align: center;
+  font-size: 12px;
+  height: 30px;
+}
